@@ -23,8 +23,8 @@ body {
 }
 
 main {
-    width: clamp(320px, 90%, 400px);
-    background-color: $card-bg;
+    width: clamp(320px, 90%, 450px);
+    background-color: $white;
     overflow: hidden;
     border-radius: 1rem;
     text-align: center;
@@ -38,7 +38,7 @@ main {
 .details {
     padding: 1.5rem;
     @media (min-width: 768px) {
-        padding: 2rem;
+        padding: 2.5rem;
     }
 }
 
@@ -56,7 +56,7 @@ main {
 
 .promo {
     margin: 1rem 0;
-    background-color: hsl(223, 54%, 95%);
+    background-color: $promo-bg;
     border-radius: 0.5rem;
     padding: 1rem;
     display: flex;
@@ -84,7 +84,7 @@ main {
 
 .btn {
     background-color: $highlight;
-    color: $card-bg;
+    color: $white;
     font-weight: 700;
     width: 100%;
     border: 0;
@@ -93,6 +93,8 @@ main {
     border-radius: 0.5rem;
     cursor: pointer;
     transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+        rgba(0, 0, 0, 0.22) 0px 10px 10px;
     &:hover {
         opacity: 0.8;
     }

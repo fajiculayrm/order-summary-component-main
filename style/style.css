@@ -99,8 +99,8 @@ body {
 }
 
 main {
-  width: clamp(320px, 90%, 400px);
-  background-color: hsl(225deg, 100%, 98%);
+  width: clamp(320px, 90%, 450px);
+  background-color: #fff;
   overflow: hidden;
   border-radius: 1rem;
   text-align: center;
@@ -116,7 +116,7 @@ main {
 }
 @media (min-width: 768px) {
   .details {
-    padding: 2rem;
+    padding: 2.5rem;
   }
 }
 
@@ -134,7 +134,7 @@ main {
 
 .promo {
   margin: 1rem 0;
-  background-color: hsl(223deg, 54%, 95%);
+  background-color: hsl(225deg, 100%, 98%);
   border-radius: 0.5rem;
   padding: 1rem;
   display: flex;
@@ -162,7 +162,7 @@ main {
 
 .btn {
   background-color: hsl(245deg, 75%, 52%);
-  color: hsl(225deg, 100%, 98%);
+  color: #fff;
   font-weight: 700;
   width: 100%;
   border: 0;
@@ -171,6 +171,7 @@ main {
   border-radius: 0.5rem;
   cursor: pointer;
   transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .btn:hover {
   opacity: 0.8;

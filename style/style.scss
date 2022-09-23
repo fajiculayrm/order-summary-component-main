@@ -1,0 +1,119 @@
+@import "./reset";
+@import "./variables";
+
+html {
+    font-family: $main-font;
+    font-size: 16px;
+}
+
+body {
+    color: $primary-color;
+    min-height: 100vh;
+    background-color: $body-bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    @media (min-width: $tablet) {
+        background-image: url(/images/pattern-background-desktop.svg);
+    }
+}
+
+main {
+    width: clamp(320px, 90%, 400px);
+    background-color: $card-bg;
+    overflow: hidden;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.banner-img {
+    width: 100%;
+    display: flex;
+}
+
+.details {
+    padding: 1.5rem;
+    @media (min-width: 768px) {
+        padding: 2rem;
+    }
+}
+
+.title {
+    font-size: 1.5rem;
+    color: $secondary-color;
+    margin-bottom: 1rem;
+    font-weight: 900;
+}
+
+.claim {
+    color: $primary-color;
+    margin: 0.5rem;
+}
+
+.promo {
+    margin: 1rem 0;
+    background-color: hsl(223, 54%, 95%);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.plan {
+    font-size: 1rem;
+    font-weight: 900;
+    color: $secondary-color;
+}
+
+.change {
+    font-weight: 700;
+    color: $highlight;
+    transition: 0.3s;
+    margin-left: auto;
+    &:hover {
+        text-decoration: none;
+        opacity: 0.8;
+    }
+}
+
+.btn {
+    background-color: $highlight;
+    color: $card-bg;
+    font-weight: 700;
+    width: 100%;
+    border: 0;
+    margin: 1rem 0;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.cancel {
+    display: block;
+    text-decoration: none;
+    color: $primary-color;
+    margin: 0.5rem;
+    font-weight: 700;
+    transition: 0.3s;
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
